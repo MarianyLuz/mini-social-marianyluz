@@ -1,5 +1,6 @@
 let likeCount = 0;
-let curtido = false; // flag boolleana
+let curtido = false; // flag booleana
+
 
 function curtir() {
   if(curtido == false){
@@ -15,3 +16,20 @@ function curtir() {
 }
 
 document.getElementById("likeBtn").addEventListener("click", curtir);
+
+function descurtir() {
+  if(descurtindo == false){
+     likeCount++;
+     descurtindo = true;
+  document.getElementById("likeCount").innerText = likeCount;
+  }else{
+     likeCount--;
+     descurtindo = false;
+  document.getElementById("likeCount").innerText = likeCount;
+  }
+
+}
+
+document.getElementById("likeBtn").addEventListener("click", descurtir);
+<button type="button">descurtir</button>
+
