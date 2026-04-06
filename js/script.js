@@ -18,13 +18,13 @@ function curtir() {
 }
 
 function descurtir() {
-  if(descurtindo == false){
+  if(descurtido == false){
      deslikeCount++;
-     descurtindo = true;
+     descurtido = true;
   document.getElementById("deslikeCount").innerText = deslikeCount;
   }else{
      deslikeCount--;
-     descurtindo = false;
+     descurtido = false;
   document.getElementById("deslikeCount").innerText = deslikeCount;
   }
 
